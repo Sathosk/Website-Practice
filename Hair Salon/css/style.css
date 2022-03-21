@@ -1,0 +1,641 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************
+/* Typography Style
+/*******************************************/
+
+.heading-font {
+  font-family: 'Cinzel', serif;
+
+}
+
+.body-font {
+  font-family: 'Mulish', sans-serif;
+  color: #0B0B0B;
+}
+
+header .heading-font {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #0B0B0B;
+}
+
+header ul i {
+  font-size: 1.6rem;
+}
+
+header .book-online-wrapper i {
+  font-size: 1rem;
+}
+
+.main-section h1 {
+  font-size: 12rem;
+  font-weight: 400;
+  color: white;
+}
+
+.main-section p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  padding-left: 0.5rem;
+}
+
+.main-section > p {
+  letter-spacing: 0.3rem;
+}
+
+.main-section-box p span {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.main-section div p {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.button {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.main-section > a i {
+  font-size: 1rem;
+  padding-right: 0.8rem;
+}
+
+.main-section-box .button {
+  color: black;
+  font-weight: 600;
+}
+
+.main-section-box h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.quality-points h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.quality-points p {
+  line-height: 1.8;
+}
+
+.momentum-section h2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 6rem;
+}
+
+.bottom-sections-heading {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.bottom-sections-heading span {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.stylers-box-layout {
+  color: white;
+}
+
+
+.stylers-box-layout h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.stylers-box-layout span {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+.book-appointment-container > span {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.book-appointment-container p .bold-span {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.book-appointment-container p {
+  font-size: 4.3rem;
+  font-weight: 500;
+  line-height: 8rem;
+}
+
+/******************************************
+/* Header Layout
+/*******************************************/
+.hamburger-menu {
+  display: none;
+}
+
+header {
+  width: auto;
+  background-color: white;
+  height: 9.5rem;
+  line-height: 9.2rem;
+}
+
+.header-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header-container .links {
+  padding-left: 3rem;
+}
+
+.header-container img {
+  float: left;
+  padding: 3rem 0;
+  width: 8.5rem;
+}
+
+nav {
+  width: 58%;
+  height: 7rem;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul i {
+  opacity: 0.6;
+}
+
+.book-online-wrapper {
+  margin-left: 2rem;
+  line-height: 9.3rem;
+  float: right;
+}
+
+.book-online-wrapper a {
+  padding-left: 0.6rem;
+}
+/******************************************
+/* Main Layout
+/*******************************************/
+main {
+  width: auto;
+  height: fit-content;
+  background: url("../assets/bg-main.jpg") no-repeat center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-section {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  margin: 12% 0 0 14%;
+}
+
+.main-section h1 span {
+  display: block;
+}
+
+.main-section h1 {
+  margin-bottom: 0;
+}
+
+.main-section p {
+  padding-left: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 22rem;
+  background-color: black;
+  border: solid black;
+  border-width: 2rem 1rem;
+}
+
+.main-section-box {
+  width: 37rem;
+  padding: 3rem 0;
+  margin-top: 11%;
+  background-color: black;
+}
+
+.main-section-box h4 {
+  height: 9rem;
+  line-height: 9rem;
+  margin: 0;
+  padding: 0 0 0 2.6rem;
+  border-left: 0.5rem solid white;
+}
+
+.main-section-box p {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 2.5rem;
+  line-height: 6rem;
+}
+
+.main-section-box .button {
+  background-color: white;
+  border-color: white;
+  margin-left: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.arrows-link {
+  position: absolute;
+  bottom: 15rem;
+  right: 15rem;
+}
+
+.circle-button {
+  border: 2.5rem solid white;
+  border-width: 2.5rem 2.7rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circle-button i {
+  font-size: 1.5rem;
+  color: #0B0B0B;
+}
+ 
+/******************************************
+/* Quality Points Layout
+/*******************************************/
+
+.quality-points {
+  width: 60%;
+  margin: 15rem auto;
+}
+
+.quality-points ul {
+  width: 100%;
+  height: 28rem;
+}
+
+.quality-points li {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  height: 100%;
+  padding: 0 2.6rem;
+}
+
+.quality-points img {
+  width: 35%;
+}
+
+/******************************************
+/* Momentum Section Layout
+/*******************************************/
+
+.momentum-section {
+  width: auto;
+  background-color: #F3F4F6;
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+.momentum-section div {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.momentum-section div > * {
+  float: left;
+  width: 50%;
+}
+
+.momentum-left {
+  padding-right: 8rem;
+  line-height: 3rem;
+}
+
+.momentum-left span {
+  display: block;
+}
+
+.momentum-left h2 {
+  margin-top: 0;
+}
+
+.momentum-left p {
+  margin-bottom: 3.8rem;
+}
+
+.momentum-left .button {
+  border-width: 1.5rem 1rem;
+}
+
+.momentum-right img{
+  width: 100%;
+}
+
+/******************************************
+/* Bottom Section Layout
+/*******************************************/
+
+/********* OUR STYLERS LAYOUT *********/
+
+.bottom-section {
+  width: auto;
+  padding: 10rem 0 18rem 0;
+  overflow: hidden;
+}
+
+.bottom-section-container {
+  width: 62%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bottom-sections-heading {
+  padding-bottom: 5rem;
+}
+
+.bottom-sections-heading span {
+  display: block;
+  line-height: 0.5rem;
+}
+
+.bottom-section-container > div {
+  float: left;
+  width: 33.3333%;
+  padding: 0 1.5rem;
+}
+
+.stylers-container {
+  position: relative;
+}
+
+.stylers-container img {
+  width: 100%;
+}
+
+.stylers-box-layout {
+  position: absolute;
+  width: 75%;
+  bottom: -4rem;
+  left: 50%;
+  margin-left: -37.5%;
+  height: fit-content;
+  overflow: hidden;
+  background-color: black;
+}
+
+.stylers-box-layout h5 {
+  margin: 2rem 0 1rem 0;
+}
+
+.stylers-box-layout span {
+  display: inline-block;
+  margin: 0 0 2rem 0;
+}
+
+/********* BOOK APPOINTMENT LAYOUT *********/
+
+.book-appointment-section {
+  clear: both;
+  width: auto;
+  overflow: hidden;
+}
+
+.book-appointment-container {
+  width: 62%;
+  background: url("../assets/dayoffer.png") no-repeat center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0 auto 12rem auto;
+  overflow: hidden;
+}
+
+.book-appointment-container span {
+  display: block;
+}
+
+.book-appointment-container > span {
+  padding-left: 1rem;
+  margin: 12rem 0 0 12rem;
+}
+
+.book-appointment-container p {
+  margin: 2rem 0 2rem 12rem;
+}
+
+.book-appointment-container > .button {
+  width: 27rem;
+  margin: 0 0 12rem 12rem;
+}
+
+
+/********* LOOKBOOK LAYOUT *********/
+
+.lookbook-section {
+  width: auto;
+  overflow: hidden;
+  margin: 0 0 12rem 0;
+}
+
+.lookbook-section h2 {
+  text-align: center;
+  width: 62%;
+  margin: 0 auto 5rem auto;
+}
+
+.lookbook-container {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.lookbook-container {
+  display: flex;
+  height: 62vw;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column1, .column2, .column3 {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lookbook-container img {
+  width: 100%;
+}
+
+/************************************************/
+/************************************************/
+/******  MOBILE RESPONSIVE 851px - 1200px *******/
+/************************************************/
+/************************************************/
+
+@media  (min-width: 851px) and (max-width: 1200px) {
+  .header-container ul {
+    display: none;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .header-container img {
+    position: absolute;
+    left: 42%;
+    top: 0;
+    display: block;
+    float: none;
+  }
+
+  .hamburger-menu {
+    display: inline;
+    font-size: 3rem;
+  }
+
+  .momentum-section div > * {
+    float: none;
+    width: 100%;
+  }
+
+  .momentum-right {
+    margin-top: 7rem;
+  }
+}
+
+/************************************************/
+/************************************************/
+/******  MOBILE RESPONSIVE 851px AND BELOW ******/
+/************************************************/
+/************************************************/
+
+@media  (max-width: 850px) {
+  .header-container ul {
+    display: none;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .header-container img {
+    position: absolute;
+    left: 42%;
+    top: 0;
+    display: block;
+    float: none;
+  }
+
+  .book-online-wrapper {
+    display: none;
+  }
+
+  .main-section h1 {
+    font-size: 5rem;
+  }
+
+  .main-section p {
+    font-size: 1.3rem;
+    padding-right: 2rem;
+  }
+
+  .hamburger-menu {
+    display: inline;
+    font-size: 3rem;
+  }
+
+  .momentum-section div > * {
+    float: none;
+    width: 100%;
+  }
+
+  .momentum-right {
+    margin-top: 7rem;
+  }
+
+  .quality-points ul {
+    height: fit-content;
+  }
+
+  .quality-points ul > * {
+    float: none;
+    width: 100%;
+  }
+
+  .bottom-section .stylers-container {
+    float: none;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .book-appointment-container {
+    display: none;
+  }
+
+  .arrows-link {
+    display: none;
+  }
+}

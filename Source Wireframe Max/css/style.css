@@ -1,0 +1,537 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************
+/* Typography style
+/*******************************************/
+.font-style,  .li-link-style, .button{
+  font-family: 'Lato', sans-serif;
+  color: #304659;
+}
+
+header h4 {
+  display: inline-block;
+  font-size: 3.7rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+header .li-link-style {
+  font-size: 2rem;
+  color: #43596C;
+  font-weight: 400;
+}
+
+.button {
+  font-size: 2rem;
+}
+
+main span.font-style {
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  color: #7F95A7;
+}
+
+.top-section h1 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.top-section p, .feature-container p, .bottom-section p {
+  font-size: 1.9rem;
+}
+
+.section-features h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.section-features a {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.bottom-section h2 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+/******************************************
+/* Layout Header
+/*******************************************/
+header {
+  width: auto;
+  height: 8rem;
+  line-height: 7.7rem;
+  background-color: #F5F9FC;
+}
+
+.header-content-container {
+  position: relative;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.header-content-container > h4 {
+  float: left;
+}
+
+.header-content-container .button {
+  float: right;
+}
+
+.nav-container {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.nav-container li {
+  float: left;
+}
+
+.nav-container li+li {
+  margin-left: 6rem;
+}
+
+header .button {
+  margin: 1.7rem 0;
+}
+
+.button {
+  line-height: 0;
+  color: white;
+  border: 2rem solid #304659;
+  border-width: 2.2rem 2.8rem;
+  border-radius: 0.2rem;
+}
+/******************************************
+/* Layout Main
+/*******************************************/
+main {
+  width: 100%;
+  background-color: #F5F9FC;
+  overflow: hidden;
+}
+
+.top-section {
+  width: 90%;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+.top-section > * {
+  float: left;
+}
+
+.top-section span {
+  width: 25%;
+  margin-top: 18rem;
+}
+
+.top-section h1 {
+  margin: 0;
+  margin-top: 3rem;
+  width: 25%;
+}
+
+.top-section form {
+  width: clamp(26rem, 25%, 43rem);
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  min-width: 20rem;
+}
+
+.top-section form input{
+  float: left;
+  padding: 0;
+  padding-left: 1rem;
+  color: #8D9FAF;
+  border-style: solid;
+  background-color: #C9D3DB;
+  border-color: #C9D3DB;
+  min-width: 72.4%;
+  height: 4.46rem;
+  margin: 0;
+}
+
+.top-section form input::placeholder {
+  color: #8D9FAF;
+  opacity: 1;
+}
+
+.top-section form .button {
+  display: block;
+  line-height: 4.4rem;
+  background-color: #304659;
+  text-align: center;
+  border: none;
+  width: 27.6%;
+  float: right;
+}
+
+.top-section p {
+  width: 23%;
+  display: inline-block;
+}
+
+.img-wrapper {
+  float: right;
+  width: 63%;
+  height: 86rem;
+  overflow: hidden;
+}
+
+.top-section img {
+  width: 100%;
+  padding-top: 3.5rem;
+  float: right;
+}
+/******************************************
+/* Layout Features
+/*******************************************/
+.section-features {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10rem 0;
+  overflow: hidden;
+}
+
+.section-features >* {
+  float: left;
+  width: 25%;
+}
+
+.feature-container {
+  padding-right: 8rem;
+}
+
+.feature-container p {
+  margin-bottom: 3rem;
+}
+
+.section-features .feature-img {
+  width: 4rem;
+  opacity: 1;
+}
+
+.section-features h3 {
+  margin: 0;
+  padding: 3rem 0 0 0;
+}
+
+h3.img2-adjust, h3.img4-adjust {
+  padding-top: 2.5rem
+}
+
+.feature-container.feature4 {
+  padding-right: 7rem;
+}
+/******************************************
+/* Layout Bottom
+/*******************************************/
+
+.bottom-container {
+  width: auto;
+  padding-top: 7rem;
+  background-color: white;
+}
+
+.bottom-section {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.bottom-container h2 {
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+.bottom-section p {
+  width: 40%;
+  margin-bottom: 6rem;
+}
+
+.bottom-section .block {
+  width: 100%;
+  height: 5rem;
+  background-color: #C9D3DB;
+}
+
+/* Hamburger display */
+
+.hamburger-menu {
+  display: none;
+  font-size: 3rem;
+  line-height: 7.9rem;
+  color: #5D6F7F;
+}
+
+/* Bottom Img display */
+.img-wrapper-mobile {
+  display: none;
+}
+
+/*******************************************/
+/*******************************************/
+/*      Responsive Style 601 - 900px       */
+/*******************************************/
+/*******************************************/
+
+@media (min-width: 601px) and (max-width: 900px) {
+  header .nav-container {
+    display: none;
+  }
+
+  header .button {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+    float: left;
+  }
+
+  .header-content-container {
+    text-align: center;
+  }
+
+  .header-content-container h4 {
+    float: none;
+  }
+
+  /*************************************/
+  /*       Top-section for Mobile      */
+  /*************************************/
+
+  .top-section {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .top-section > * {
+    float: none;
+  }
+
+  .top-section span {
+    display: inline-block;
+    margin: 5rem auto 0 auto;
+  }
+
+  .top-section h1 {
+    width: 100%;
+  }
+
+  .top-section form {
+    width: 80%;
+  }
+
+  .top-section p {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .img-wrapper {
+    display: none;
+  }
+
+  .img-wrapper-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .img-wrapper-mobile img {
+    width: 100%;
+    float: right;
+  }
+
+  /****************************************/
+  /*     Feature-section for Mobile       */
+  /****************************************/
+
+  .section-features {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .section-features > * {
+    float: left;
+    width: 50%;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-features .feature4 {
+    padding-right: 4rem;
+  }
+
+  /****************************************/
+  /*     Bottom-section for Mobile        */
+  /****************************************/
+
+  .bottom-container .bottom-section {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .bottom-section h2 {
+    width: 100%;
+  }
+
+  .bottom-section p {
+    width: 100%;
+  }
+}
+
+/*******************************************/
+/*******************************************/
+/*      Responsive Style Below 600px       */
+/*******************************************/
+/*******************************************/
+
+@media (max-width: 600px) {
+  header .nav-container {
+    display: none;
+  }
+
+  header .button {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+    float: left;
+  }
+
+  .header-content-container h4 {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    float: none;
+  }
+
+  /*************************************/
+  /*       Top-section for Mobile      */
+  /*************************************/
+
+  .top-section {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .top-section > * {
+    float: none;
+  }
+
+  .top-section span {
+    display: inline-block;
+    margin: 5rem auto 0 auto;
+  }
+
+  .top-section h1 {
+    width: 100%;
+  }
+
+  .top-section form {
+    width: 100%;
+  }
+
+  .top-section form input, .top-section form .button {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .top-section p {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .img-wrapper {
+    display: none;
+  }
+
+  .img-wrapper-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .img-wrapper-mobile img {
+    width: 100%;
+    float: right;
+  }
+
+  /****************************************/
+  /*     Feature-section for Mobile       */
+  /****************************************/
+
+  .section-features {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .section-features > * {
+    float: left;
+    width: 50%;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-features .feature4 {
+    padding-right: 4rem;
+  }
+
+  /****************************************/
+  /*     Bottom-section for Mobile        */
+  /****************************************/
+
+  .bottom-container .bottom-section {
+    width: 93%;
+    margin: 0 auto;
+  }
+
+  .bottom-section h2 {
+    width: 100%;
+  }
+
+  .bottom-section p {
+    width: 100%;
+  }
+}

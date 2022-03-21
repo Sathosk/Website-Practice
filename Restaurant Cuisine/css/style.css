@@ -1,0 +1,421 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* Typography Style
+/*******************************************/
+
+.heading-font {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.body-font {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #72728A
+  ;
+}
+
+.header-icon {
+  font-size: 2.2rem;
+  color: #0D0D25;
+  opacity: 0.6;
+}
+
+.top-section h1 {
+  font-size: 10.5rem;
+}
+
+.about-us-container > span {
+  color: #FD9C3C;
+  font-size: 2.2rem;
+}
+
+ h2 {
+  font-size: 8.5rem;
+}
+
+.about-us-container p {
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  font-weight: 600;
+}
+/******************************************
+/* Header Layout
+/*******************************************/
+
+main {
+  width: auto;
+  padding-bottom: 12rem;
+  background: url("../assets/first_bg1.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  width: auto;
+}
+
+header nav {
+  width: 80%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header nav img {
+  width: 12%;
+}
+
+header nav ul {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .body-font:hover, header .header-icon:hover {
+  color: #FD9C3C;
+}
+
+/******************************************
+/* Top Section Layout
+/*******************************************/
+.top-section {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+
+.top-section h1 {
+  margin-bottom: 3rem;
+}
+
+.top-section input {
+  width: 38%;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-section form {
+  width: 100%;
+}
+
+.top-section input[type=text] {
+  border: 0.3rem solid #D4D8E6;
+  border-radius: 1rem 0 0 1rem;
+  padding: 1.5rem 3rem 1.5rem 5rem;
+  font-size: 1.8rem;
+  color: #FD9C3C;
+}
+
+.top-input-icon {
+  position: absolute;
+  color: #b9bece;
+  left: 2rem;
+  top: 38%;
+  z-index: 5;
+}
+
+.top-section .button {
+  display: inline-block;
+  color: white;
+  width: 15%;
+  font-weight: 300;
+  text-align: center;
+  background-color: #FD9C3C;
+  border: 0.9rem solid #FD9C3C;
+  border-radius: 0 1rem 1rem 0;
+  line-height: 3.8rem;
+}
+
+.button div {
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  margin-bottom: 0.3rem;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+}
+
+.top-section ul {
+  display: flex;
+  margin: 5rem 0;
+  width: 25%;
+  justify-content: space-between;
+}
+
+.top-section-icon {
+  color: #FD9C3C;
+  font-size: 2rem;
+}
+
+/******************************************
+/* About Us Section Layout
+/*******************************************/
+.about-us {
+  width: auto;
+  padding: 10rem 0 15rem 0;
+  background: url("../assets/secondbg.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-us-container {
+  width: 40%;
+  margin: 0 20% 0 40%;
+}
+
+.about-us-container h2 {
+  margin: 1rem 0 3rem 0;
+}
+
+.about-us-container .button {
+  display: inline-block;
+  border: 1rem solid #FD9C3C;
+  border-radius: 0.8rem;
+  background-color: #FD9C3C;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 4rem;
+  margin-top: 2.5rem;
+}
+
+.about-us-container .button i {
+  padding-left: 2rem;
+}
+/******************************************
+/* About Us Section Layout
+/*******************************************/
+.specility-section {
+  width: auto;
+  padding: 12rem 0;
+  background: #F2F6F7;
+}
+
+.specility-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.specility-container > span {
+  color: #FD9C3C;
+  font-size: 2.3rem;
+}
+
+.specility-container h2 {
+  margin: 0;
+}
+
+.specility-container ul {
+  width: 45%;
+  margin: 4rem auto;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.1rem solid #b9bece;
+}
+
+.specility-container ul li a {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.specility-container ul li a:hover {
+  color: #FD9C3C;
+  border-bottom: 0.1rem solid #FD9C3C;
+}
+
+.food-lookbook1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.food-lookbook1 + .food-lookbook1 {
+  margin-top: 4%;
+}
+
+.food-lookbook1 img {
+  width: 21%;
+}
+
+/******************************************
+/* Call Section Layout
+/*******************************************/
+
+.call-section {
+  width: auto;
+  padding: 12rem 0;
+}
+
+.call-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.opening-hours-container span {
+  color: #FD9C3C;
+  font-size: 2.3rem;
+}
+
+.opening-hours-container h2 {
+  margin: 0;
+}
+
+.opening-hours-container .block {
+  display: block;
+  color: #0D0D25;
+  margin: 1.5rem 0;
+}
+
+.opening-hours-container .call-icon {
+  font-size: 3rem;
+  color: #FD9C3C;
+  margin: 4rem 0 0 0;
+  padding: 1rem;
+  border: 0.3rem solid #FD9C3C;
+  border-radius: 50%;
+}
+
+.opening-hours-container .phone-number.block {
+  color: #FD9C3C;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.opening-time span, .opening-time time {
+  display: block;
+}
+
+.opening-time ul{
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opening-time ul .week-day {
+  font-size: 2.5rem;
+}
+
+.opening-time ul .time {
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0 0;
+}
+
+.call-container div img {
+  width: 100%;
+  padding-top: 10rem;
+}
+
+/******************************************
+/* Call Section Layout
+/*******************************************/
+
+.reference-section {
+  background-color: #F2F6F7;
+  text-align: center;
+  padding: 12rem 0;
+}
+
+.reference-container .block {
+  display: block;
+}
+
+.reference-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.reference-container span:first-child {
+  color: #FD9C3C;
+  font-size: 2.3rem;
+}
+
+.reference-container h2 {
+  margin: 0 0 6rem 0;
+}
+
+.reference-container img {
+  width: 15%;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+
+.reference-container .name {
+  font-size: 4rem;
+  color: #0D0D25;
+}
+
+.reference-container span i {
+  color: #ece90d;
+  font-size: 2.5rem;
+}
+
+.reference-container .stars {
+  padding: 3rem 0;
+}
+
+.reference-container p {
+  font-size: 2.8rem;
+  font-style: italic;
+  line-height: 5rem;
+}
+
+
+
+
