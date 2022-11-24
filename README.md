@@ -6,10 +6,10 @@ Static Websites created with only css and html for practice. These webpages were
 I had nothing but images of the websites to work with, so everything here was purely made from the knowledge I had during the time. I highly encourage anyone learning to do the same, you learn a bit from following tutorials on youtube, but by creating code on your own is very efficient to consolidate the knowledge!
 
 You can check them out, just don't judge, this was very beginning :grin:<br>
-<a href="https://sathosk.github.io/Website-Practice/Hair%20Salon/#" target="_blank">https://sathosk.github.io/Website-Practice/Hair%20Salon/#</a><br>
-<a href="https://sathosk.github.io/Website-Practice/Level%20Ground/#" target="_blank">https://sathosk.github.io/Website-Practice/Level%20Ground/#</a><br>
-<a href="https://sathosk.github.io/Website-Practice/Restaurant%20Cuisine/#" target="_blank">https://sathosk.github.io/Website-Practice/Restaurant%20Cuisine/#</a><br>
-<a href="https://sathosk.github.io/Website-Practice/Source%20Wireframe%20Max/#" target="_blank">https://sathosk.github.io/Website-Practice/Source%20Wireframe%20Max/#</a>
+https://sathosk.github.io/Website-Practice/Hair%20Salon/#<br>
+https://sathosk.github.io/Website-Practice/Level%20Ground/#<br>
+https://sathosk.github.io/Website-Practice/Restaurant%20Cuisine/#<br>
+https://sathosk.github.io/Website-Practice/Source%20Wireframe%20Max/#
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
